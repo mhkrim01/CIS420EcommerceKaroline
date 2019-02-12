@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-card{
+    width: 20vw;
+    margin: 10px;
+    float: left;
+}
+
+*::-webkit-scrollbar {
+    width: 0.40em;
+    background-color: transparent;
+  }
+
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;
+    outline: 1px solid blue;
+    border-radius: 10px;
+  }
