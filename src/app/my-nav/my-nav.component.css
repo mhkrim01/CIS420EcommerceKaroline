@@ -15,3 +15,11 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-toolbar{
+  background-color: rgb(139, 138, 138);
+  color: white;
+}
+.spacer{
+  flex: 1 1 auto;
+}
