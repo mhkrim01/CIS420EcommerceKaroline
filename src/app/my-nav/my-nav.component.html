@@ -1,12 +1,14 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav-content>
     <mat-toolbar class="">
-      <div>
-        <h3>Sweet Karoline's Cakes</h3>
+      <div class="nav-link">
+        <div class="toolbar-icon">
+          <mat-icon class="cake-icon">cake</mat-icon>
+        </div>
       </div>
-      <button mat-button routerLink="/home" >Home</button>
-      <button mat-button routerLink="/products" >Products</button>
-      <button mat-button routerLink="/about" >About</button>
+      <div class="nav-link" routerLink="/home" >Home</div>
+      <div class="nav-link" routerLink="/products" >Products</div>
+      <div class="nav-link" routerLink="/about" >About</div>
       <span class="spacer"></span>
       <button mat-icon-button>
         <mat-icon>person</mat-icon>
