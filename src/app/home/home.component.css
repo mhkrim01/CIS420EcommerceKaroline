@@ -48,6 +48,7 @@
 }
 
 #parallax-world-of-ugg h2 {
+    font-family: 'Oswald', sans-serif;
     font-size: 70px;
     letter-spacing: 10px;
     text-align: center;
@@ -226,14 +227,10 @@ h2{
 
 .text-container{
     padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-bottom: 100px;
     text-align: center;
-}
-
-.view-products-wrapper{
-
 }
 
 .social-media-wrapper{
@@ -243,13 +240,9 @@ h2{
     background-color: #1f1e1f;
 }
 
-.about-wrapper{
-
-}
-
 .home-wrapper{
     padding-top: 1px;
-    height: 275px;
+    height: 375px;
     background-color: #1f1e1f;
     border-left: 5px solid #1f1e1f;
     border-right: 5px solid #1f1e1f;
@@ -293,4 +286,24 @@ p{
 
 .line{
     margin-top: 10px;
+}
+
+.cupcake-icon{
+    width: 100px;
+    height: 100px;
+}
+
+.col-6{
+    padding: 0 !important;
+}
+
+.mat-icon{
+    color: white;
+    font-size: 100px;
+    margin-right: 85px;
+}
+
+.icon-row{
+    padding-top: 20px;
+    height: 100px;
 }
