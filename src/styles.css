@@ -5,7 +5,12 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+  font-family: 'Source Sans Pro', "Helvetica Neue", sans-serif; 
+
+}
+
 mat-card{
     width: 20vw;
     margin: 10px;
@@ -19,7 +24,7 @@ mat-card{
 
   
   *::-webkit-scrollbar-thumb {
-    background-color: blue;
-    outline: 1px solid blue;
+    background-color: #5a5a5a;
+    outline: 1px solid #5a5a5a;
     border-radius: 10px;
   }
