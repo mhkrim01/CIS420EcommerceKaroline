@@ -237,19 +237,29 @@ h2{
 }
 
 .social-media-wrapper{
+    width: 200px;
+    height: 200px; 
+    border-radius: 100%;
+    background-color: #1f1e1f;
+}
+
+.about-wrapper{
 
 }
 
 .home-wrapper{
-    height: 38vh;
-    border-radius: 50px;
-    border: solid 1px white;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 1px;
+    height: 275px;
+    background-color: #1f1e1f;
+    border-left: 5px solid #1f1e1f;
+    border-right: 5px solid #1f1e1f;
 }
 
 .home-text-section{
     background-color: #1f1e1f;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    height: auto !important;
 }
 
 h3{
