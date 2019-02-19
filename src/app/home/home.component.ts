@@ -49,8 +49,9 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.flyIn = false;
+    console.log('mike is an asshole');
   }
-  
+
   ngOnInit() {
   }
 
