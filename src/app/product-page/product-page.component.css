@@ -1,11 +1,11 @@
 .top-bar{
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     overflow: hidden;
     position: relative;
     width: 100vw;
-    height: 10vh;
-    background-image: url(https://i.imgur.com/A3zwKhc.jpg);
+    height: 5vh;
+    background-image: url(https://i.imgur.com/uYDQnbW.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
@@ -17,4 +17,29 @@
 
 .margin-0{
     margin: 0 !important;
+}
+
+.product-filter-wrapper{
+    position: sticky;
+    padding: 10px;
+}
+
+.filter-tool{
+    height: 500px;
+    background-color: #666566cb;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.product-container{
+    margin-top: 50px;
+}
+
+mat-card{
+    float: right;
+    margin: 2px;
 }
