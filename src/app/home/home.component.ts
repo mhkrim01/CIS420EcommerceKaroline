@@ -7,25 +7,54 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   animations: [
-    trigger('showSocialMedia', [
+    trigger('showFace', [
       state('true', style({ maxHeight: '40vh' })),
       state('false', style({ maxHeight: 0, display: 'none' })),
-      transition('false => true', [style({ opacity: '0' }), animate('400ms 300ms')]),
-      transition('true => false', animate('400ms'))
-  ])]
+      transition('false => true', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('200ms ease-in', style({ transform: 'translateX(0%)' }))
+      ]),
+      transition('false => true', [
+        animate('200ms ease-in', style({ transform: 'translateX(-100%)' }))
+      ])
+    ]),
+    trigger('showGram', [
+      state('true', style({ maxHeight: '40vh' })),
+      state('false', style({ maxHeight: 0, display: 'none' })),
+      transition('false => true', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('300ms ease-in', style({ transform: 'translateX(0%)' }))
+      ]),
+      transition('false => true', [
+        animate('300ms ease-in', style({ transform: 'translateX(-100%)' }))
+      ])
+    ]),
+    trigger('showTwit', [
+      state('true', style({ maxHeight: '40vh' })),
+      state('false', style({ maxHeight: 0, display: 'none' })),
+      transition('false => true', [
+        style({ transform: 'translateX(-100%)' }),
+        animate('500ms ease-in', style({ transform: 'translateX(0%)' }))
+      ]),
+      transition('false => true', [
+        animate('500ms ease-in', style({ transform: 'translateX(-100%)' }))
+      ])
+    ]),
+  ]
 })
+
 export class HomeComponent implements OnInit {
 
-  public flyIn
+  public flyIn;
 
   constructor() {
     this.flyIn = false;
-   }
+  }
 
   ngOnInit() {
   }
 
-  toggleFlyIn(){
+  toggleFlyIn() {
     this.flyIn = !this.flyIn;
   }
 }

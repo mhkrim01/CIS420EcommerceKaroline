@@ -1,7 +1,7 @@
 <div id="parallax-world-of-ugg" class="body-wrapper">
 
     <section>
-        <div class="parallax-one parallax-img intro">
+        <div class="parallax-one parallax-img">
             <h2>Sweet Karoline's Cakes</h2>
             <p class="line-break margin-top-10" style="color: white;"></p>
             <div class="text-container">
@@ -17,16 +17,21 @@
         </div>
     </section>
 
+    <section class="shorter-parallax">
+        <div class="parallax-img parallax-two">
+        </div>
+    </section>
+
     <section>
         <div class="parallax-one parallax-img home-text-section">
-            <div class="row">
+            <div class="main-row row">
                 <div class="col-6">
                     <div class="view-products-wrapper home-wrapper">
                         <div class="row justify-content-center icon-row">
                             <mat-icon>local_dining</mat-icon>
                         </div>
                         <div class="row justify-content-center order-title">
-                            <h3>Philosophy</h3>
+                            <h3 class="shadow">Philosophy</h3>
                         </div>
                         <div class="row justify-content-center product-prompt">
                             <p>
@@ -43,17 +48,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                </div>
                 <div class="col-6">
                     <div class="about-wrapper home-wrapper">
                         <div class="row justify-content-center icon-row">
                             <mat-icon>shop</mat-icon>
                         </div>
                         <div class="row justify-content-center order-title">
-                            <h3>Shop now</h3>
+                            <h3 class="shadow">Shop now</h3>
                         </div>
                         <div class="row justify-content-center product-prompt">
                             <p>
@@ -72,41 +73,40 @@
         </div>
     </section>
 
+    <section class="shorter-parallax">
+        <div class="parallax-img parallax-two"></div>
+    </section>
+
     <section>
-        <div class="parallax-one parallax-img home-text-section">
-            <div class="row">
-                <div class="col-6">
-                    <div class="view-products-wrapper home-wrapper">
-                        <div class="row justify-content-center icon-row">
-                            <mat-icon>share</mat-icon>
-                        </div>
-                        <div class="row justify-content-center order-title">
-                            <h3>Follow and connect!</h3>
-                        </div>
-                        <div class="row justify-content-center product-prompt">
-                            <p>
-                                Sweet Karoline's Cake is on social media!
-                                Follow her page on Facebook, Instagram, and Twitter
-                                for the latest news and deals.
-                            </p>
-                        </div>
-                        <div class="row justify-content-center">
-                            <button mat-stroked-button (click)="toggleFlyIn()">
-                                Connect now
-                            </button>
-                        </div>
-                        <div [@showSocialMedia]="flyIn">
-                            <div class="row justify-content-center product-prompt">
-                                <p>
-                                    Sweet Karoline's Cake is on social media!
-                                    Follow her page on Facebook, Instagram, and Twitter
-                                    for the latest news and deals.
-                                </p>
-                            </div>
-                        </div>
+        <div class="parallax-one parallax-img padding-top-0">
+            <div class="row justify-content-center">
+                <div class="social-media-wrapper  mat-elevation-z6">
+                    <div class="row justify-content-center icon-row">
+                        <mat-icon>share</mat-icon>
+                    </div>
+                    <div class="row justify-content-center order-title">
+                        <h3 class="shadow">Follow and connect!</h3>
+                    </div>
+                    <div class="row justify-content-center product-prompt">
+                        <p>
+                            Sweet Karoline's Cake is on social media!
+                            Follow her page on Facebook, Instagram, and Twitter
+                            for the latest news and deals.
+                        </p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button mat-stroked-button (click)="toggleFlyIn()">
+                            Connect now
+                        </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <h4>Footer</h4>
         </div>
     </section>
 </div>
