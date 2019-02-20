@@ -8,7 +8,7 @@ html, body { height: 100%; }
 body { 
   margin: 0; 
   font-family: 'Source Sans Pro', "Helvetica Neue", sans-serif; 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 
 }
 
@@ -30,3 +30,6 @@ mat-card{
     border-radius: 10px;
   }
 
+  .mat-sidenav-content{
+    overflow-x: hidden !important;
+  }

@@ -46,7 +46,7 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
 export class HomeComponent implements OnInit {
 
   public flyIn;
-
+  
   constructor() {
     this.flyIn = false;
   }

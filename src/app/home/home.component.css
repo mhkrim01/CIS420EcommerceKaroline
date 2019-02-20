@@ -225,6 +225,7 @@ h2{
 
 .body-wrapper{
     background-color: transparent;
+    overflow-x: hidden;
 }
 
 .block{
@@ -251,6 +252,7 @@ h2{
 .social-media-wrapper{
     width: 400px;
     height: 400px; 
+    margin-bottom: 100px;
     padding: 15px;
     border-radius: 100%;
     background-color: #1f1e1f;
@@ -344,4 +346,8 @@ p{
     height: 100px;
     width: 100%;
     color: white;
+}
+
+.container{
+    margin: 0;
 }

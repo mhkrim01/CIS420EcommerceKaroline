@@ -1,5 +1,5 @@
 .top-bar{
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 100px;
     overflow: hidden;
     position: relative;
@@ -22,24 +22,29 @@
 .product-filter-wrapper{
     position: sticky;
     padding: 10px;
+    top: 500px;
+    right: 30px;
 }
 
 .filter-tool{
     height: 500px;
-    background-color: #666566cb;
-    border-radius: 15px;
+    background-color: #a7a7a798;
+    border-radius: 5px;
     padding: 10px;
-}
-
-body{
-    overflow-x: hidden;
+    border: 1px solid #1f1e1f;
 }
 
 .product-container{
     margin-top: 50px;
+    margin-bottom: 45px;
 }
 
 mat-card{
     float: right;
     margin: 2px;
+}
+
+.dessertTypeRadioGroup{
+    display: inline-flex;
+    flex-direction: column;
 }
