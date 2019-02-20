@@ -50,7 +50,7 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.flyIn = false;
   }
-
+  
   ngOnInit() {
   }
 
