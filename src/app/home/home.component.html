@@ -1,3 +1,6 @@
+<link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 <div id="parallax-world-of-ugg" class="body-wrapper">
 
     <section>
@@ -78,9 +81,10 @@
     </section>
 
     <section>
-        <div class="parallax-one parallax-img padding-top-0">
+        <div class="parallax-one parallax-img padding-top-20">
             <div class="row justify-content-center">
-                <div class="social-media-wrapper  mat-elevation-z6">
+                <div class="col-4"></div>
+                <div class=" col-4 social-media-wrapper  mat-elevation-z6">
                     <div class="row justify-content-center icon-row">
                         <mat-icon>share</mat-icon>
                     </div>
@@ -99,15 +103,30 @@
                             Connect now
                         </button>
                     </div>
-                    <div [@showTwit]="" class="row">
-
+                </div>
+                <div class="col-4">
+                    <div [@showTwit]="flyIn" class="row">
+                        <div class="social-icon mat-elevation-z6">
+                            <fa name="facebook"></fa>
+                        </div>
+                    </div>
+                    <div [@showGram]="flyIn" class="row">
+                        <div class="social-icon mat-elevation-z6">
+                            <fa name="twitter"></fa>
+                        </div>
+                    </div>
+                    <div [@showFace]="flyIn" class="row">
+                        <div class="social-icon ">
+                            <fa name="instagram"></fa>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-
+    <section class="shorter-parallax">
+        <div class="parallax-img parallax-two">
+        </div>
     </section>
 </div>

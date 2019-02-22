@@ -9,6 +9,7 @@ import { AppRoutingModule } from './routing/app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent]

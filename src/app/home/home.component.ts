@@ -8,36 +8,33 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
   styleUrls: ['./home.component.css'],
   animations: [
     trigger('showFace', [
-      state('true', style({ maxHeight: '40vh' })),
-      state('false', style({ maxHeight: 0, display: 'none' })),
-      transition('false => true', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('200ms ease-in', style({ transform: 'translateX(0%)' }))
+      state('true', style({ opacity: 1 })),
+      state('false', style({ opacity: 0 })),
+      transition('true => false', [
+        animate('200ms ease-out')
       ]),
       transition('false => true', [
-        animate('200ms ease-in', style({ transform: 'translateX(-100%)' }))
+        animate('600ms ease-in')
       ])
     ]),
     trigger('showGram', [
-      state('true', style({ maxHeight: '40vh' })),
-      state('false', style({ maxHeight: 0, display: 'none' })),
-      transition('false => true', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('300ms ease-in', style({ transform: 'translateX(0%)' }))
+      state('true', style({ opacity: 1 })),
+      state('false', style({ opacity: 0 })),
+      transition('true => false', [
+        animate('300ms ease-out')
       ]),
       transition('false => true', [
-        animate('300ms ease-in', style({ transform: 'translateX(-100%)' }))
+        animate('400ms ease-in')
       ])
     ]),
     trigger('showTwit', [
-      state('true', style({ maxHeight: '40vh' })),
-      state('false', style({ maxHeight: 0, display: 'none' })),
-      transition('false => true', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('500ms ease-in', style({ transform: 'translateX(0%)' }))
+      state('true', style({ opacity: 1 })),
+      state('false', style({ opacity: 0 })),
+      transition('true => false', [
+        animate('500ms ease-out')
       ]),
       transition('false => true', [
-        animate('500ms ease-in', style({ transform: 'translateX(-100%)' }))
+        animate('200ms ease-in')
       ])
     ]),
   ]
@@ -57,4 +54,5 @@ export class HomeComponent implements OnInit {
   toggleFlyIn() {
     this.flyIn = !this.flyIn;
   }
+  
 }

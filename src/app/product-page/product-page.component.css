@@ -27,11 +27,10 @@
 }
 
 .filter-tool{
-    height: 500px;
-    background-color: #a7a7a798;
-    border-radius: 5px;
+    height: auto;
+    border-radius: 2px;
     padding: 10px;
-    border: 1px solid #1f1e1f;
+    padding-left: 20px;
 }
 
 .product-container{
@@ -44,7 +43,20 @@ mat-card{
     margin: 2px;
 }
 
-.dessertTypeRadioGroup{
+.dessertTypeCheckBox{
     display: inline-flex;
     flex-direction: column;
+    font-size: 15px !important;
+}
+
+.dessert-type{
+    font-family: 'Oswald';
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 22px;
+    border-bottom: 1px solid black;
+}
+
+.mat-checkbox-checked.mat-checkbox-background{
+   background-color: blue !important;
 }
