@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ProductDetailComponent } from './product-page/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     MyNavComponent,
     ProductPageComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

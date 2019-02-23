@@ -34,7 +34,9 @@
 }
 
 .product-container{
-    margin-top: 50px;
+    padding-left: 0 !important;
+    width: 100vw;
+    margin-top: 30px;
     margin-bottom: 45px;
 }
 
@@ -55,8 +57,4 @@ mat-card{
     margin-bottom: 10px;
     font-size: 22px;
     border-bottom: 1px solid black;
-}
-
-.mat-checkbox-checked.mat-checkbox-background{
-   background-color: blue !important;
 }

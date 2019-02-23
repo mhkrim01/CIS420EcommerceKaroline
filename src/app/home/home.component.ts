@@ -54,5 +54,6 @@ export class HomeComponent implements OnInit {
   toggleFlyIn() {
     this.flyIn = !this.flyIn;
   }
+
   
 }
