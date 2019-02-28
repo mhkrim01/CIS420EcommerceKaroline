@@ -10,6 +10,7 @@ export class ProductPageComponent implements OnInit {
 
   testProd = {name: 'test'};
   products: Array<any> = [this.testProd, this.testProd, this.testProd, this.testProd, this.testProd, this.testProd]
+  isHovering: boolean = false;
 
   constructor(private _router: Router) {
     console.log(this.products.length);
@@ -21,5 +22,6 @@ export class ProductPageComponent implements OnInit {
   navigateToProducts(){
     this._router.navigateByUrl('/products');
   }
+
 
 }

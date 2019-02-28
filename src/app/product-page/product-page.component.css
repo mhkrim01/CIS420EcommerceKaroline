@@ -37,8 +37,29 @@
 }
 
 mat-card{
-    float: right;
-    margin: 2px;
+    float: left;
+    margin: 5px;
+    width: 400px;
+    height: 250px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0 !important;
+}
+
+.product-image{
+    height: 70% !important;
+    width: 100%;
+    background-image: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
+    background-size: cover;
+    background-position: top center;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product-image:hover{
+    opacity: .75;
+    transition: .15s;
 }
 
 .dessertTypeCheckBox{
@@ -60,4 +81,17 @@ mat-card{
     border: 2px solid white;
     padding: 10px;
     text-shadow: 1px 2px 15px rgb(63, 63, 63);
+}
+
+.product-title{
+    padding-left: 7px;
+    font-family: 'Oswald';
+    font-size: 21px;
+    font-weight: 300;
+    margin: 8px;
+}
+
+.product-card-bottom-wrapper{
+    padding-left: 15px;
+    padding-bottom: 5px;
 }
