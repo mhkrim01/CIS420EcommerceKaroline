@@ -33,7 +33,7 @@
     </div>
     <div class="col-8 product-dashboard">
       <div *ngFor="let product of products; let i = index">
-        <mat-card class="example-card mat-elevation-z3">
+        <mat-card class="example-card mat-elevation-z0">
           <div class="product-image">
           </div>
           <div class="product-card-bottom-wrapper">
@@ -50,11 +50,12 @@
         </mat-card>
       </div>
     </div>
-    <div class="col-2">
-      <div class="row">
-        <button mat-fab>
-          Create custom order!
-        </button>
+    <div class="col-2 custom-column">
+      <div class="row justify-content-left">
+        <mat-card class="side-prompt">
+          <div><p>Nothing catching your eye? Karoline does custom orders!</p></div>
+          <button mat-raised-button>Create custom order</button>
+        </mat-card>
       </div>
     </div>
   </div>
