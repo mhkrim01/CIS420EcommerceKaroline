@@ -26,14 +26,17 @@
     border-radius: 2px;
     padding: 10px;
     padding-left: 20px;
+    padding-top: 0;
 }
 
 .product-container{
     background-color: white;
     padding-left: 0 !important;
     width: 100vw;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 45px;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
 mat-card{
@@ -41,6 +44,7 @@ mat-card{
     margin: 5px;
     width: 400px;
     height: 250px;
+    border-radius: 0px;
     overflow-y: hidden;
     overflow-x: hidden;
     padding: 0 !important;
@@ -84,6 +88,19 @@ mat-card{
     font-size: 21px;
     font-weight: 300;
     margin: 8px;
+    float: left;
+}
+
+.fill-space{
+    flex: 1 1 auto;
+}
+
+.product-button{
+    float: right;
+    margin-top: .45rem;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 2rem;
 }
 
 .product-card-bottom-wrapper{
@@ -92,11 +109,13 @@ mat-card{
 }
 
 .side-prompt{
+    padding: 1rem;
+    padding-top: 0;
     height: auto;
-    padding: 15px !important;
 }
 
 .custom-column{
     padding-right: 20px;
-    padding-left: 0px
+    padding-left: 0px;
+    text-align: center;
 }

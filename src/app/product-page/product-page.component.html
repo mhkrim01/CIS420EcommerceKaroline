@@ -33,29 +33,15 @@
     </div>
     <div class="col-8 product-dashboard">
       <div *ngFor="let product of products; let i = index">
-        <mat-card class="example-card mat-elevation-z0">
-          <div class="product-image">
-          </div>
-          <div class="product-card-bottom-wrapper">
-            <div class="row">
-              <p class="product-title">Product name</p>
-              <button mat-button>Learn more</button>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <p>$25 - 50</p>
-              </div>
-            </div>
-          </div>
-        </mat-card>
+        <product-detail></product-detail>
       </div>
     </div>
     <div class="col-2 custom-column">
-      <div class="row justify-content-left">
-        <mat-card class="side-prompt">
-          <div><p>Nothing catching your eye? Karoline does custom orders!</p></div>
-          <button mat-raised-button>Create custom order</button>
-        </mat-card>
+      <div class="row justify-content-center side-prompt">
+        <div class="side-prompt">
+          <p class="product-title">Nothing catching your eye?</p>
+        </div>
+        <button mat-raised-button>Create custom order!</button>
       </div>
     </div>
   </div>

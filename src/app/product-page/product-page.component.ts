@@ -22,6 +22,4 @@ export class ProductPageComponent implements OnInit {
   navigateToProducts(){
     this._router.navigateByUrl('/products');
   }
-
-
 }
