@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./product-page.component.css']
 })
 export class ProductPageComponent implements OnInit {
-
+  
   testProd = {name: 'test'};
   products: Array<any> = [this.testProd, this.testProd, this.testProd, this.testProd, this.testProd, this.testProd]
   isHovering: boolean = false;
