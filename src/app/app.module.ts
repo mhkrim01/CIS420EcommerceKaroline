@@ -11,6 +11,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { HomeComponent } from './home/home.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProductDetailComponent } from './product-page/product-detail/product-detail.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductDetailComponent } from './product-page/product-detail/product-de
     ProductPageComponent,
     AboutComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,6 @@ import { ProductDetailComponent } from './product-page/product-detail/product-de
     AngularFontAwesomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent]
+  bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent, ContactPageComponent]
 })
 export class AppModule { }
