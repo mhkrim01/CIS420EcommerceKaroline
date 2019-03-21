@@ -12,5 +12,4 @@ export class ContactPageComponent implements OnInit {
   ngOnInit() {
   }
   
-
 }
