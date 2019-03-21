@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { ProductDetailComponent } from './product-page/product-detail/product-detail.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { CartComponent } from './cart/cart.component';
+import { OrderPageComponent } from './order-page/order-page.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     AboutComponent,
     HomeComponent,
     ProductDetailComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    CartComponent,
+    OrderPageComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     AngularFontAwesomeModule
   ],
   providers: [],
-  bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent, ContactPageComponent]
+  bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent,
+    ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent],
+  entryComponents: [CartComponent]
 })
 export class AppModule { }
