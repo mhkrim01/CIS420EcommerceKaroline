@@ -18,7 +18,7 @@ export class ProductPageComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
   navigateToProducts(){
     this._router.navigateByUrl('/products');
   }
