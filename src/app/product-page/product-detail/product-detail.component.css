@@ -41,8 +41,8 @@
 
 mat-card{
     float: left;
-    margin: 5px;
-    width: 400px;
+    margin: 15px;
+    width: 300px;
     height: 250px;
     border-radius: 0px;
     overflow-y: hidden;
@@ -53,7 +53,7 @@ mat-card{
 .product-image{
     height: 70% !important;
     width: 100%;
-    background-image: url('https://material.angular.io/assets/img/examples/shiba2.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2016/03/27/22/38/cake-1284548_1280.jpg');
     background-size: cover;
     background-position: top center;
     -moz-background-size: cover;
