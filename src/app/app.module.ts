@@ -17,6 +17,7 @@ import { OrderPageComponent } from './order-page/order-page.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { IndividualProductComponent } from './individual-product/individual-product.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
