@@ -15,6 +15,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { CartComponent } from './cart/cart.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
+import { IndividualProductComponent } from './individual-product/individual-product.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
     ContactPageComponent,
     CartComponent,
     OrderPageComponent,
-    CartItemComponent
+    CartItemComponent,
+    IndividualProductComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,7 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
   ],
   providers: [],
   bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent,
-    ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent],
+    ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent, IndividualProductComponent],
   entryComponents: [CartComponent]
 })
 export class AppModule { }
