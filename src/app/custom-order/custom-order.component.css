@@ -1,0 +1,44 @@
+.example-container {
+    height: auto;
+    width: 50%;
+    background-color: white;
+    padding: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 25vh;
+    margin-bottom: 35vh;
+}
+
+.form-container{
+    padding-top: 50px;
+    width: 90%;
+}
+
+.button-container{
+    width: 25%;
+    margin: 15px;
+    margin-left: 25px;
+
+}
+
+.flavor{
+    width: 55% !important;
+}
+
+.order-button{
+    float: right;
+}
+
+h5{
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+.mat-form-field{
+    margin-left: 25px !important;
+
+}
+
+.textbox{
+    width: 90% !important;
+}

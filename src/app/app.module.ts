@@ -17,6 +17,7 @@ import { OrderPageComponent } from './order-page/order-page.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { IndividualProductComponent } from './individual-product/individual-product.component';
 import { OrderService } from './services/order.service';
+import { CustomOrderComponent } from './custom-order/custom-order.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { OrderService } from './services/order.service';
     CartComponent,
     OrderPageComponent,
     CartItemComponent,
-    IndividualProductComponent
+    IndividualProductComponent,
+    CustomOrderComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { OrderService } from './services/order.service';
   ],
   providers: [OrderService],
   bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent,
-    ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent, IndividualProductComponent],
+    ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent, IndividualProductComponent,
+    CustomOrderComponent],
   entryComponents: [CartComponent]
 })
 export class AppModule { }
