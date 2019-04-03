@@ -40,3 +40,8 @@ mat-card{
   .mat-sidenav-content{
     overflow-x: hidden !important;
   }
+
+  .mat-card-header-text{
+    width: 100% !important;
+    padding: 0 !important;
+}

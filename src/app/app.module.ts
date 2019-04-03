@@ -16,6 +16,7 @@ import { CartComponent } from './cart/cart.component';
 import { OrderPageComponent } from './order-page/order-page.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { IndividualProductComponent } from './individual-product/individual-product.component';
+import { OrderService } from './services/order.service';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { IndividualProductComponent } from './individual-product/individual-prod
     AppRoutingModule,
     AngularFontAwesomeModule
   ],
-  providers: [],
+  providers: [OrderService],
   bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent,
     ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent, IndividualProductComponent],
   entryComponents: [CartComponent]

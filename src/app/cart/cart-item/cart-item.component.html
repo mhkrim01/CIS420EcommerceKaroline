@@ -1,3 +1,16 @@
-<p>
-  cart-item works!
-</p>
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title>
+        <div class="row">
+          <div class="col-9">
+            {{item.Product.Title}}
+          </div>
+          <div class="col-2">
+            <button mat-button>Remove</button>
+          </div>
+        </div>
+      </mat-card-title>
+      <mat-card-subtitle>Price: ${{item.Product.Price}} Quantity: {{item.Quantity}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>

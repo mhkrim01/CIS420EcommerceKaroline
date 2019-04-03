@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent, pathMatch: 'full' },
   {path: 'contact', component: ContactPageComponent, pathMatch: 'full'},
   {path: 'order', component: OrderPageComponent, pathMatch: 'full'},
-  {path: 'product-detail', component: IndividualProductComponent, pathMatch: 'full'}
+  {path: 'product-detail/:ProductId', component: IndividualProductComponent, pathMatch: 'full'}
 ]
 
 @NgModule({

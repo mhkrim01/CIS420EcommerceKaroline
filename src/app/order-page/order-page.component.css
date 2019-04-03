@@ -1,0 +1,55 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    background-color: white;
+    padding: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 25vh;
+    margin-bottom: 35vh;
+}
+
+h1{
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+h2{
+    margin-top: 15px;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.header-image{
+    background-image: url('../../assets/example-cake.jpg');
+    background-size: cover;
+}
+
+.cart-wrapper{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 10px;
+}
+
+mat-card{
+    width: 100%;
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+button.order-btn{
+    font-size: 25px;
+    font-family: 'Oswald';
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+    background-color: #1f1e1f;
+}
+
+.mat-card-header-text{
+    width: 100% !important;
+    padding: 0 !important;
+}

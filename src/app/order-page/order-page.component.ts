@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartItem } from '../models/cart-item.model';
+import { OrderService } from '../services/order.service';
 
 @Component({
   selector: 'app-order-page',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderPageComponent implements OnInit {
 
-  constructor() { }
+  items: Array<CartItem> = new Array<CartItem>();
+
+  constructor(private _orderService: OrderService) {
+    this._orderService.cart.subscribe(res => {
+      this.items = res.Items;
+    });
+   }
 
   ngOnInit() {
   }
-
 }

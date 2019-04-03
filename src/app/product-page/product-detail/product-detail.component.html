@@ -3,13 +3,13 @@
     </div>
     <div class="product-card-bottom-wrapper">
       <div class="row">
-        <p class="product-title">Product name</p>
+        <p class="product-title">{{product.Title}}</p>
         <span class="fill-space"></span>
-        <button mat-stroked-button class="product-button" routerLink="/product-detail">Learn more</button>
+        <button mat-stroked-button class="product-button" routerLink="/product-detail/{{product.ProductId}}">Learn more</button>
       </div>
       <div class="row">
         <div class="col-4">
-          <p>$25 - 50</p>
+          <p>${{product.Price}}</p>
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { OrderService } from '../services/order.service';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-product-page',
@@ -8,12 +10,13 @@ import { Router } from '@angular/router';
 })
 export class ProductPageComponent implements OnInit {
   
-  testProd = {name: 'test'};
-  products: Array<any> = [this.testProd, this.testProd, this.testProd, this.testProd, this.testProd, this.testProd]
   isHovering: boolean = false;
+  products: Array<Product> = new Array<Product>();
 
-  constructor(private _router: Router) {
-    console.log(this.products.length);
+  constructor(private _router: Router, private _orderService: OrderService) {
+    this._orderService.getProducts().subscribe(res => {
+      this.products = res;
+    })
    }
 
   ngOnInit() {

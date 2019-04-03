@@ -1,13 +1,32 @@
 <div class="container">
   <div class="row">
-    <h4>Cart</h4>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <p>cart items</p>
+    <div class="col-6">
+      <div class="row">
+        <h2>Your cart</h2>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="row">
+        <h2 class="total">Total: ${{total}}</h2>
+      </div>
     </div>
   </div>
-  <div class="row justify-content-right">
-    <button mat-button (click)="navigateToOrder()">Order now</button>
+  <div *ngIf="items.length > 0">
+    <div *ngFor="let item of items" class="row">
+      <app-cart-item [item]="item"></app-cart-item>
+    </div>
+  </div>
+  <div *ngIf="items.length === 0">
+    <div class="row">
+      <p>No items yet</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8"></div>
+    <div class="col-4">
+      <button mat-raised-button class="order-button" (click)="navigateToOrder()">
+        Order now
+      </button>
+    </div>
   </div>
 </div>

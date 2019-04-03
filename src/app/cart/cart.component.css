@@ -1,0 +1,49 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    background-color: white;
+    padding: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-top: 25vh;
+    margin-bottom: 35vh;
+}
+
+h1{
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+h2{
+    margin-top: 15px;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+.container{
+    width: 40vw;
+    height: auto;
+}
+
+app-cart-item{
+    margin-bottom: 25px;
+    width: 100% !important;
+}
+
+.order-button{
+    padding: 8px;
+    background-color: #1f1e1f;
+    color: white;
+}
+
+h2.total{
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 28px;
+}
+
+.row{
+    width: 100% !important;
+}
