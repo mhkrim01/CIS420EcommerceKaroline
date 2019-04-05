@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row title-row">
+    <h2>Edit items</h2>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="item-wrapper">
+    <div class="row" *ngFor="let item of items">
+      <app-item-detail [item]="item" (changedItem)="updateItem($event)"></app-item-detail>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,7 @@ import { CartComponent } from '../cart/cart.component';
 import { OrderService } from '../services/order.service';
 import { Product } from '../models/product.model';
 import { CartItem } from '../models/cart-item.model';
+import { EditItemComponent } from '../edit-item/edit-item.component';
 
 @Component({
   selector: 'app-my-nav',
@@ -16,13 +17,9 @@ import { CartItem } from '../models/cart-item.model';
 export class MyNavComponent implements OnInit {
 
   items: Array<CartItem> = new Array<CartItem>();
+  products: Array<Product> = new Array<Product>();
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches)
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver, private _dialog: MatDialog, 
+  constructor(private _cartDialog: MatDialog, private _editDialog: MatDialog, 
     private _orderService: OrderService) {
   }
 
@@ -30,11 +27,20 @@ export class MyNavComponent implements OnInit {
     this._orderService.cart.subscribe(res => {
       this.items = res.Items;
     });
+    this._orderService.getProducts().subscribe(res => {
+      this.products = res
+    });
   }
   
   openCartModal(){
     const dialogConfig = new MatDialogConfig();
-    dialogConfig.data = { items: this.items }
-    this._dialog.open(CartComponent, dialogConfig);
+    dialogConfig.data = { items: this.items };
+    this._cartDialog.open(CartComponent, dialogConfig);
+  }
+
+  openEditItem(){
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.data = { items: this.products };
+    this._editDialog.open(EditItemComponent, dialogConfig);
   }
 }

@@ -18,6 +18,10 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { IndividualProductComponent } from './individual-product/individual-product.component';
 import { OrderService } from './services/order.service';
 import { CustomOrderComponent } from './custom-order/custom-order.component';
+import { OrderConfirmationComponent } from './order-confirmation/order-confirmation.component';
+import { EditItemComponent } from './edit-item/edit-item.component';
+import { ItemDetailComponent } from './edit-item/item-detail/item-detail.component';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 
 
 @NgModule({
@@ -33,7 +37,11 @@ import { CustomOrderComponent } from './custom-order/custom-order.component';
     OrderPageComponent,
     CartItemComponent,
     IndividualProductComponent,
-    CustomOrderComponent
+    CustomOrderComponent,
+    OrderConfirmationComponent,
+    EditItemComponent,
+    ItemDetailComponent,
+    PaymentPageComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +53,7 @@ import { CustomOrderComponent } from './custom-order/custom-order.component';
   providers: [OrderService],
   bootstrap: [AppComponent, MyNavComponent, ProductPageComponent, HomeComponent, ProductDetailComponent,
     ContactPageComponent, CartComponent, OrderPageComponent, CartItemComponent, IndividualProductComponent,
-    CustomOrderComponent],
-  entryComponents: [CartComponent]
+    CustomOrderComponent, OrderConfirmationComponent, EditItemComponent, ItemDetailComponent, PaymentPageComponent],
+  entryComponents: [CartComponent, EditItemComponent, PaymentPageComponent]
 })
 export class AppModule { }

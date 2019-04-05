@@ -12,37 +12,43 @@ export class OrderService {
     ProductId: 1,
     Title: 'Layered Carrot Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 25.99
+    Price: 25.99,
+    ProductType: 'carrot-cake'
   };
   chocCakeProduct = <Product>{
     ProductId: 2,
     Title: 'Chocolate Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 35.99
+    Price: 35.99,
+    ProductType: 'choc-cake'
   };
   yellowCakeProduct = <Product>{
     ProductId: 3,
     Title: 'Yellow Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 15.99
+    Price: 15.99,
+    ProductType: 'yellow-cake'
   };
-  pieProduct = <Product>{
-    ProductId: 4,
-    Title: 'Yummy Pie',
+  yellowLayeredCakeProduct = <Product>{
+    ProductId: 3,
+    Title: 'Yellow Layered Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 15.99
+    Price: 15.99,
+    ProductType: 'yellow-cake'
   };
   carrotCupCakeProduct = <Product>{
     ProductId: 4,
-    Title: 'Carrot Cake Cupcake',
+    Title: 'Carrot Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 5.99
+    Price: 5.99,
+    ProductType: 'vanilla-cupcake'
   };
   chocCupCakeProduct = <Product>{
     ProductId: 5,
-    Title: 'Chocolate Cupcake',
+    Title: 'Chocolate Cake',
     Description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget cursus orci. Suspendisse semper fringilla tellus, sed commodo metus ornare quis. Donec finibus dui egestas ante blandit aliquet. Sed varius, tortor sit amet iaculis fermentum turpis velit efficitur nisl, vel fringilla nisl dolor nec est. Donec faucibus vehicula odio eget imperdiet.',
-    Price: 5.99
+    Price: 5.99,
+    ProductType: 'choc-cupcake'
   };
 
 
@@ -53,8 +59,9 @@ export class OrderService {
     this.chocCupCakeProduct,
     this.carrotCupCakeProduct,
     this.yellowCakeProduct,
-    this.pieProduct,
-    this.pieProduct
+    this.yellowLayeredCakeProduct,
+    this.chocCakeProduct,
+    this.carrotCupCakeProduct
   ];
 
   defaultCart = <Cart>{
@@ -76,6 +83,12 @@ export class OrderService {
   removeFromCart(productToRemove: Product){
     this.defaultCart.Items = this.defaultCart.Items.filter(x => x.Product.Title != productToRemove.Title);
     this.cart.next(this.defaultCart);
+  }
+
+  editProduct(product: Product){
+    let editedIndex = this.defaultProducts.findIndex(x => x.ProductId === product.ProductId);
+    this.defaultProducts[editedIndex] = product;
+    this.products.next(this.defaultProducts);
   }
 
 }

@@ -1,6 +1,6 @@
 .example-container {
     height: auto;
-    width: 50%;
+    width: 45%;
     background-color: white;
     padding: 10vh;
     padding-top: 5vh;
@@ -10,12 +10,12 @@
 }
 
 .form-container{
-    padding-top: 50px;
-    width: 90%;
+    padding-top: 15px;
+    width: 100%;
 }
 
 .button-container{
-    width: 25%;
+    width: 100%;
     margin: 15px;
     margin-left: 25px;
 
@@ -40,5 +40,10 @@ h5{
 }
 
 .textbox{
-    width: 90% !important;
+    width: 100% !important;
+}
+
+.end{
+    font-size: 16px;
+    margin-top: 15px !important;
 }

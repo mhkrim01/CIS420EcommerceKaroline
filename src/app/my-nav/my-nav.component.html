@@ -12,6 +12,9 @@
       <div class="nav-link" routerLink="/about">About</div>
       <div class="nav-link" routerLink="/contact">Contact</div>
       <span class="spacer"></span>
+      <button mat-icon-button (click)="openEditItem()">
+        <mat-icon>person</mat-icon>
+      </button>
       <button mat-icon-button (click)="openCartModal()">
         <mat-icon matBadge="{{items.length}}" [matBadgeHidden]="items.length === 0">shopping_cart</mat-icon>
       </button>

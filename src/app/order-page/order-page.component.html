@@ -4,50 +4,76 @@
     <mat-divider></mat-divider>
     <h2>Your cart</h2>
     <div class="cart-wrapper">
-      <div *ngIf="items.length === 0">
+      <div *ngIf="cart.Items.length === 0">
         <p>
           No items yet
         </p>
       </div>
-      <div *ngIf="items.length > 0">
-        <div *ngFor="let item of items">
-          <app-cart-item [item]="item"></app-cart-item>
+      <div *ngIf="cart.Items.length > 0">
+        <div *ngFor="let item of cart.Items">
+          <app-cart-item (itemToRemove)="removeItemFromCart($event)" [item]="item"></app-cart-item>
         </div>
       </div>
     </div>
 
-    <h2>Order Information</h2>
+    <h2>Order</h2>
+    <mat-vertical-stepper [linear]="true" #stepper>
+      <mat-step>
+        <ng-template matStepLabel>Provide details for your dessert</ng-template>
+        <h5>Fulfillment</h5>
+        <mat-form-field>
+          <input [disabled]="cart.Items.length === 0" matInput placeholder="Name on order">
+        </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="Name on order">
-    </mat-form-field>
+        <mat-form-field>
+          <input [disabled]="cart.Items.length === 0" matInput placeholder="Address">
+        </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="Address">
-    </mat-form-field>
+        <mat-form-field>
+          <input [disabled]="cart.Items.length === 0" matInput placeholder="City">
+        </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="City">
-    </mat-form-field>
+        <mat-form-field>
+          <input [disabled]="cart.Items.length === 0" matInput placeholder="State">
+        </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="State">
-    </mat-form-field>
+        <mat-form-field>
+          <input [disabled]="cart.Items.length === 0" matInput placeholder="Zip Code">
+        </mat-form-field>
 
-    <mat-form-field>
-      <input matInput placeholder="Zip Code">
-    </mat-form-field>
+        <mat-form-field>
+          <mat-label>Fulfillment option</mat-label>
+          <mat-select [disabled]="cart.Items.length === 0">
+            <mat-option value="option">Delivery</mat-option>
+            <mat-option value="option">Pick-up</mat-option>
+          </mat-select>
+        </mat-form-field>
 
-    <mat-form-field>
-      <mat-label>Fulfillment option</mat-label>
-      <mat-select>
-        <mat-option value="option">Delivery</mat-option>
-        <mat-option value="option">Pick-up</mat-option>
-      </mat-select>
-    </mat-form-field>
+      </mat-step>
+      <mat-step>
+          <ng-template matStepLabel>Payment</ng-template>
+          <div class="row">
+          <h5>Payment Information</h5>
+          <p class="end">
+            Here's where you would enter in payment info for paypal and such
+          </p>
+        </div>
+        <div class="button-container">
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Review and complete</button>
+        </div>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Complete order</ng-template>
+        <div class="row">
+          <p class="end">
+            Thanks! You're order has been sent to the kitchen, and we'll get started on it ASAP.
+          </p>
+        </div>
+        <div class="row">
+          <button mat-stroked-button class="order-btn" routerLink="/home">Submit</button>
+        </div>
 
-    <div class="row justify-content-center">
-      <button class="order-btn" mat-raised-button>Go to payment</button>
-    </div>
-
+      </mat-step>
+    </mat-vertical-stepper>
   </div>

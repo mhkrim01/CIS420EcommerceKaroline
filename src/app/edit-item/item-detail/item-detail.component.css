@@ -1,0 +1,33 @@
+.header-image{
+    background-image: url('../../../assets/example-cake.jpg') !important;
+}
+
+mat-card{
+    width: 500px;
+    padding: 0;
+}
+
+.title{
+    padding-top: 15px !important;
+    padding-left: 22px;
+    font-weight: 400 !important;
+    font-family: 'Oswald';
+    font-size: 20px !important;
+}
+
+.description{
+    width: 100%;
+}
+
+.price{
+    margin-left: 10px;
+}
+
+.submit-button{
+    color: white;
+    background-color:#1f1e1f;
+}
+
+.upload{
+    margin-bottom: 5px;
+}

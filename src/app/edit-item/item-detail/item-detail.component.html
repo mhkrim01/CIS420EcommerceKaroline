@@ -1,0 +1,47 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>
+      <div class="row">
+        <div class="title">
+          {{item.Title}}
+        </div>
+      </div>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <mat-expansion-panel class="mat-elevation-z0">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Edit item details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-form-field>
+        <input #title matInput placeholder="Product title" value="{{item.Title}}">
+      </mat-form-field>
+
+      <mat-form-field class="price">
+        <input #price matInput placeholder="Price" value="{{item.Price}}">
+      </mat-form-field>
+
+      <mat-form-field class="description" appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea #description matInput value="{{item.Description}}"></textarea>
+      </mat-form-field>
+
+      <button mat-stroked-button class="upload">Upload picture</button>
+      <div class="row">
+        <div class="col-8"></div>
+        <div class="col-2">
+          <button class="submit-button" mat-raised-button
+            (click)="editItem(item.ProductId, title.value, price.value, description.value)">
+            Submit changes
+          </button>
+        </div>
+      </div>
+
+    </mat-expansion-panel>
+
+  </mat-card-content>
+</mat-card>

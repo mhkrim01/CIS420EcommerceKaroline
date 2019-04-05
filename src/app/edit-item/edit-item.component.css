@@ -1,0 +1,15 @@
+.item-wrapper{
+    height: 500px;
+    overflow: scroll;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+}
+
+.title-row{
+    font-family: 'Oswald';
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}

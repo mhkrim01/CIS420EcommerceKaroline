@@ -7,13 +7,13 @@
     </div>
     <div class="col-6">
       <div class="row">
-        <h2 class="total">Total: ${{total}}</h2>
+        <h2 class="total">Total: ${{cart.Total}}</h2>
       </div>
     </div>
   </div>
   <div *ngIf="items.length > 0">
-    <div *ngFor="let item of items" class="row">
-      <app-cart-item [item]="item"></app-cart-item>
+    <div *ngFor="let item of cart.Items" class="row">
+      <app-cart-item (itemToRemove)="removeItemFromCart($event)" [item]="item"></app-cart-item>
     </div>
   </div>
   <div *ngIf="items.length === 0">
@@ -24,7 +24,7 @@
   <div class="row">
     <div class="col-8"></div>
     <div class="col-4">
-      <button mat-raised-button class="order-button" (click)="navigateToOrder()">
+      <button [disabled]="items.length === 0" mat-raised-button class="order-button" (click)="navigateToOrder()">
         Order now
       </button>
     </div>
