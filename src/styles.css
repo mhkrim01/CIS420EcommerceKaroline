@@ -9,7 +9,6 @@ body {
   margin: 0; 
   font-family: 'Source Sans Pro', "Helvetica Neue", sans-serif; 
   overflow-x: hidden !important;
-    background-image: url(https://i.imgur.com/uYDQnbW.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: bottom center;
@@ -17,12 +16,17 @@ body {
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    background-color: #EEE5E9;
 }
 
 mat-card{
     width: 20vw;
     margin: 10px;
     float: left;
+}
+
+mat-tab-group{
+  z-index: 1 !important;
 }
 
 *::-webkit-scrollbar {

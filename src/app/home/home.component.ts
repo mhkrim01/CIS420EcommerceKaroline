@@ -43,9 +43,18 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
 export class HomeComponent implements OnInit {
 
   public flyIn;
+  transform: number = .2;
+  selectedIndex: number;
+
+  public sliderArray = [
+    {class: 'first-pic', alt: '', text:"Sweet Karoline's Cakes"},
+    {class: 'second-pic', alt: '',  text: 'Highest quality ingredients'},
+    {class: 'third-pic', alt: '', text: 'Life is what you bake it'},
+   ];
   
   constructor() {
     this.flyIn = false;
+    this.selectedIndex = 0;
   }
   
   ngOnInit() {
@@ -54,6 +63,19 @@ export class HomeComponent implements OnInit {
   toggleFlyIn() {
     this.flyIn = !this.flyIn;
   }
+
+  selected(x) {
+    this.downSelected(x);
+    this.selectedIndex = x;
+   }
+   
+   downSelected(i) {
+   this.transform =  100 - 1 * 50;
+     this.selectedIndex = this.selectedIndex + 1;
+     if(this.selectedIndex > 4) {
+       this.selectedIndex = 0;
+     }
+   }
 
   
 }
