@@ -32,7 +32,6 @@ img {
     height: 15px;
     border-radius: 15px;
     background-color: rgba(255,255,255,.5);
-    cursor: pointer;
     position: absolute;
   
   }
@@ -142,3 +141,7 @@ img {
     text-align: center;
   }
 
+  mat-icon{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }

@@ -47,16 +47,16 @@ export class HomeComponent implements OnInit {
   selectedIndex: number;
 
   public sliderArray = [
-    {class: 'first-pic', alt: '', text:"Sweet Karoline's Cakes"},
-    {class: 'second-pic', alt: '',  text: 'Highest quality ingredients'},
-    {class: 'third-pic', alt: '', text: 'Life is what you bake it'},
-   ];
-  
+    { class: 'first-pic', alt: '', text: "Sweet Karoline's Cakes" },
+    { class: 'second-pic', alt: '', text: 'Highest quality ingredients' },
+    { class: 'third-pic', alt: '', text: 'Life is what you bake it' },
+  ];
+
   constructor() {
     this.flyIn = false;
     this.selectedIndex = 0;
   }
-  
+
   ngOnInit() {
   }
 
@@ -67,15 +67,15 @@ export class HomeComponent implements OnInit {
   selected(x) {
     this.downSelected(x);
     this.selectedIndex = x;
-   }
-   
-   downSelected(i) {
-   this.transform =  100 - 1 * 50;
-     this.selectedIndex = this.selectedIndex + 1;
-     if(this.selectedIndex > 4) {
-       this.selectedIndex = 0;
-     }
-   }
+  }
 
-  
+  downSelected(i) {
+    this.transform = 100 - 1 * 50;
+    this.selectedIndex = this.selectedIndex + 1;
+    if (this.selectedIndex > 4) {
+      this.selectedIndex = 0;
+    }
+  }
+
+
 }
